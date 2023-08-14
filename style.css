@@ -38,8 +38,11 @@ li {
 }
 
 .container {
-  margin-top: 20px;
-  margin-left: 40px;
+  display: flex;
+
+  justify-content: end;
+
+  background: var(--blue500);
 }
 
 .menu {
@@ -52,12 +55,14 @@ li {
 }
 
 .menu > li {
-  font-size: 32px;
+  font-size: 2em;
   color: var(--slate100);
 
   text-align: center;
 
   width: 25%;
+  height: 100%;
+
   padding-top: 14px;
 
   cursor: pointer;
@@ -67,7 +72,7 @@ li {
 .project-items {
   display: none;
 
-  font-size: 24px;
+  font-size: 0.8em;
 
   background: var(--slate500);
 }
@@ -100,6 +105,25 @@ li {
 
 .project-items {
   width: 250px;
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    justify-content: start;
+  }
+
+  .menu {
+    font-size: 0.6em;
+  }
+
+
+
+
 }
 
 
