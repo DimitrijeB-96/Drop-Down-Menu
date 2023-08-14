@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+:root {
+  --slate100: #f1f5f9;
+  --slate300: #cbd5e1;
+  --slate500: #64748b;
+  --slate700: #334155;
+  --slate800: #1e293b;
+
+  --blue500: #3b82f6;
+  --blue600: #2563eb;
+  --blue700: #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+.menu > li {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.menu-items > li {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.menu {
+  display: flex;
+
+  width: 660px;
+  height: 72px;
+
+  background: var(--blue500);
+}
+
+.menu > li {
+  font-size: 32px;
+  color: var(--slate100);
+
+  text-align: center;
+
+  width: 25%;
+  padding-top: 14px;
+
+  cursor: pointer;
+}
+
+.page-items,
+.project-items {
+  display: none;
+
+  font-size: 24px;
+
+  background: var(--slate500);
+}
+
+.page-items > li,
+.project-items > li {
+  height: 46px;
+
+  padding-top: 8px;
+}
+
+.page-items > li:hover,
+.project-items > li:hover {
+  background: var(--slate700);
+}
+
+.menu > li:hover {
+  background: var(--blue700);
+}
+
+.menu > li:hover .page-items,
+.menu > li:hover .project-items {
+  display: block;
+}
+
+.page-items > li:first-of-type,
+.project-items > li:first-of-type {
+  margin-top: 19px;
+}
+
+.project-items {
+  width: 250px;
+}
+
+
+
+
+
