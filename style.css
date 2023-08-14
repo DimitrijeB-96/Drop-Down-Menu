@@ -25,6 +25,8 @@ body {
 
 li {
   list-style: none;
+
+  cursor: pointer;
 }
 
 .menu > li {
@@ -64,8 +66,6 @@ li {
   height: 100%;
 
   padding-top: 14px;
-
-  cursor: pointer;
 }
 
 .page-items,
@@ -80,7 +80,7 @@ li {
 .page-items > li,
 .project-items > li {
   color: var(--slate300);
-  
+
   height: 46px;
 
   padding-top: 8px;
